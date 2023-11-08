@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{20C093D9-09A2-46BB-8750-84A18AFE35AE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>gown_rental_system</RootNamespace>
+    <AssemblyName>gown_rental_system</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientForm.Designer.cs">
+      <DependentUpon>ClientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientModuleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientModuleForm.Designer.cs">
+      <DependentUpon>ClientModuleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardForm.Designer.cs">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IssueForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IssueForm.Designer.cs">
+      <DependentUpon>IssueForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IssueNextForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IssueNextForm.Designer.cs">
+      <DependentUpon>IssueNextForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IssueOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IssueOrder.Designer.cs">
+      <DependentUpon>IssueOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageGownForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageGownForm.Designer.cs">
+      <DependentUpon>ManageGownForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageGownModuleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageGownModuleForm.Designer.cs">
+      <DependentUpon>ManageGownModuleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReturnModuleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnModuleForm.Designer.cs">
+      <DependentUpon>ReturnModuleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnForm.Designer.cs">
+      <DependentUpon>ReturnForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesForm.Designer.cs">
+      <DependentUpon>SalesForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ClientForm.resx">
+      <DependentUpon>ClientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientModuleForm.resx">
+      <DependentUpon>ClientModuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardForm.resx">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IssueForm.resx">
+      <DependentUpon>IssueForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IssueNextForm.resx">
+      <DependentUpon>IssueNextForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IssueOrder.resx">
+      <DependentUpon>IssueOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageGownForm.resx">
+      <DependentUpon>ManageGownForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageGownModuleForm.resx">
+      <DependentUpon>ManageGownModuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ReturnForm.resx">
+      <DependentUpon>ReturnForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnModuleForm.resx">
+      <DependentUpon>ReturnModuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesForm.resx">
+      <DependentUpon>SalesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
